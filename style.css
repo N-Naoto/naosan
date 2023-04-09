@@ -1,0 +1,270 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 全体のレイアウト */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* ヘッダー */
+header {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+/* ヒーローセクション */
+.hero {
+  background-image: url('images/istockphoto-887982082-612x612.jpg');
+  background-size: cover;
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: silver;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* アバウトセクション */
+.about {
+  background-color: #fff;
+  padding: 4rem 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about a {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+  }
+
+  .about a:hover {
+    background-color: #222;
+  }
+
+  /* メニューセクション */
+  .menu {
+    background-color: #f5f5f5;
+    padding: 4rem 2rem;
+  }
+
+  .menu h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .menu p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .menu-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .menu-img img {
+    width: 100%;
+    height: auto;
+  }
+
+/* ギャラリー */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.gallery-item {
+  flex: 1 0 50%;
+  padding: 10px;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+  /* 予約セクション */
+  .reservation {
+    background-color: #fff;
+    padding: 4rem 2rem;
+  }
+
+  .reservation h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .reservation p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .buttons a {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    border: 2px solid #333;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+  }
+
+  .buttons a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  /* フッター */
+  footer {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  footer a {
+    color: #333;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    /* ヘッダー */
+    .logo a {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    ul {
+      margin-top: 1rem;
+    }
+
+    li {
+      margin: 0.5rem;
+    }
+
+    /* ヒーローセクション */
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+
+    /* アバウトセクション */
+    .about p {
+      font-size: 0.9rem;
+    }
+
+    /* メニューセクション */
+    .menu-img {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* 予約セクション */
+    .buttons a {
+      font-size: 0.9rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }

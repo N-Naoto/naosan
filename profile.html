@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品名 | おしゃれな商品を販売</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="logo">
+            <a href="#">商品名</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>おしゃれな商品を販売</h1>
+            <p>商品の説明文が入ります。商品の特徴や魅力的なポイントを簡単に説明してください。</p>
+            <a href="#">商品を見る</a>
+        </div>
+    </section>
+
+    <!-- アバウトセクション -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>当サイトはおしゃれな商品を販売するオンラインストアです。商品の特徴や魅力的なポイントを簡単に説明してください。商品についての情報を提供することで、ユーザーが安心して購入できるようにしましょう。</p>
+        <a href="#">もっと詳しく</a>
+    </section>
+
+    <!-- メニューセクション -->
+    <section class="menu" id="menu">
+        <h2>Menu</h2>
+        <p>商品の一覧を表示することで、ユーザーが興味を持って商品をクリックしてくれるようにしましょう。</p>
+        <div class="menu-img">
+            <img src="/images/istockphoto-1257297341-612x612.jpg" alt="料理画像">
+            <img src="/images/istockphoto-1219084170-612x612.jpg" alt="料理画像">
+            <img src="/images/istockphoto-1342607715-612x612.jpg" alt="料理画像">
+            <img src="/images/istockphoto-1401144456-612x612.jpg" alt="料理画像">
+            <img src="/images/istockphoto-523874492-612x612.jpg" alt="料理画像">
+            <img src="/images/istockphoto-1458473480-612x612.jpg" alt="料理画像">
+        </div>
+    </section>
+
+    <!-- 予約セクション -->
+    <section class="reservation" id="reservation">
+        <h2>Reservation</h2>
+        <p>予約情報を表示することで、ユーザーが商品を購入する前に予約することができるようにしましょう。</p>
+        <form>
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">予約日</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">予約時間</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="people">人数</label>
+                <input type="number" id="people" name="people" required>
+            </div>
+            <button type="submit">予約する</button>
+        </form>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>お問い合わせフォームを表示することで、ユーザーが商品について質問や意見を送ることができるようにしましょう。</p>
+        <form>
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">送信する</button>
+        </form>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="logo">
+            <a href="#">商品名</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
