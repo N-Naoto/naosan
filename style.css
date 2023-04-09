@@ -152,20 +152,23 @@ nav a:hover {
 
 /* ギャラリー */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   padding: 2rem;
 }
 
 .gallery-item {
-  flex: 1 0 50%;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: #333; */
 }
 
 .gallery-item img {
-  display: block;
-  width: 100%;
+  margin-bottom: 25px;
+  max-width: 100%;
   height: auto;
+  /* background-color: #888; */
 }
 
   /* 予約セクション */
@@ -223,6 +226,18 @@ nav a:hover {
     color: #333;
   }
 
+/* ========================
+タブレット用
+======================== */
+@media screen and (max-width: 1285px) {
+  .gallery-item {
+    justify-content: center;
+  }
+}
+
+  /* ========================
+     スマホ画面用
+  ======================== */
   @media screen and (max-width: 768px) {
 
     /* ヘッダー */
